@@ -8,5 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="102,348,0,0" VerticalAlignment="Top" Height="39" Width="105"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="332,348,0,0" VerticalAlignment="Top" Width="105" Height="39"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="573,348,0,0" VerticalAlignment="Top" Width="105" Height="39"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="112,74,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="112,110,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
