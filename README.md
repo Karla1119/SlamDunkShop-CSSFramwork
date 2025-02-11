@@ -1,2 +1,2 @@
-# De-prueba1
-Probando la creación de repositorio y la unión a Visual Studio
+# Sitio diseñado con uno de los CSS Frameworks visto en Clase
+Para este sitio web, se utilizó el framework Bulma.
