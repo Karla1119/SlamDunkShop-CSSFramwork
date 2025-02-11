@@ -1,0 +1,13 @@
+.hero-body{
+    background-color: rgb(239, 227, 45);
+}
+
+:root{
+    --bulma-primary: hsl(0, 0%, 100%);
+    --is-halfheight: hsl(0, 83%, 36%);
+}
+
+.has-background-primary{
+    background-color: var(--bulma-primary)
+    !important;
+}
