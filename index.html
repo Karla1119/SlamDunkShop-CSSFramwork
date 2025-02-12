@@ -30,7 +30,19 @@
 
             });
         </script>
-    </head>
+      </head>
+
+      <style>
+        :root{
+            --bulma-primary: hsl(199 85.5% 10.8%);
+            
+        }
+
+        .has-background-primary{
+            background-color: var(--bulma-primary)
+            !important;
+        }
+    </style>
     <body>
         <header>
             <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -93,7 +105,7 @@
                         </a>
   
                         <div class="navbar-dropdown">
-                          <a class="navbar-item">
+                          <a class="navbar-item" href="#nosotros">
                             Nosotros
                           </a>
                           <a class="navbar-item">
@@ -292,49 +304,70 @@
                     <p class="subtitle has-text-centered" style="color: black;">Echa un vistazo a nuestros productos más destacados.</p>
                   </div>
                 </section>
-              
-                <div class="carousel-container">
-                  <div class="framestrack">
-                    <div class="slide">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 1" />
-                      </figure>
-                      <div class="action">
-                        <h2>Producto 1</h2>
-                        <a href="#">Ver más</a>
+                <section class="my-4 px-4">
+                  <div class="carousel-container">
+                    <div class="framestrack">
+                      <div class="slide">
+                        <figure class="image is-4by3">
+                          <img src="imgs/MostSoldFIGURE.png" alt="Figuras" />
+                        </figure>
+                        <div class="action">
+                          <h2>Slam Dunk Collection 2023 Statue Figure</h2>
+                          <a href="#">Ver más</a>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <figure class="image is-4by3">
+                          <img src="imgs/MostSoldT-SHIRTS.png" alt="Camisas" />
+                        </figure>
+                        <div class="action">
+                          <h2>T-shirts</h2>
+                          <a href="#">Ver más</a>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <figure class="image is-4by3">
+                          <img src="imgs/MostSoldKEYCHAINS.png" alt="Llaveros" />
+                        </figure>
+                        <div class="action">
+                          <h2>Llaveros</h2>
+                          <a href="#">Ver más</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="slide">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 2" />
-                      </figure>
-                      <div class="action">
-                        <h2>Producto 2</h2>
-                        <a href="#">Ver más</a>
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 3" />
-                      </figure>
-                      <div class="action">
-                        <h2>Producto 3</h2>
-                        <a href="#">Ver más</a>
-                      </div>
-                    </div>
+                    <button class="carousel-btn prev">&lt;</button>
+                    <button class="carousel-btn next">&gt;</button>
                   </div>
+                </section>
+              </section><br>
               
-                  <!-- Botones de navegación -->
-                  <button class="carousel-btn prev">&lt;</button>
-                  <button class="carousel-btn next">&gt;</button>
+              <section id="nosotros">
+                <div class="columns is-mobile is-multiline is-flex is-vcentered is-centered is-flex-direction-row-reverse is-gapless has-background-primary">
+                    <div class="column is-full-mobile is-half-tablet has-text-white">
+                        <div class="px-4">
+                            <h2 class="title is-size-4 has-text-centered">Sobre Slam Dunk</h2>
+                            <p>Slam Dunk es una serie de manga deportivo japonesa escrita e ilustrada por Takehiko Inoue. Fue serializado en la revista de manga shōnen de Shueisha, Weekly Shōnen Jump, desde octubre de 1990 hasta junio de 1996, con los capítulos recopilados en 31 volúmenes tankōbon.</p>
+                            <p>Cuenta la historia de un equipo de baloncesto de la escuela secundaria Shōhoku en el área de Shōnan en Japón.</p>
+                            <p>En Slam Dunk Shop, entendemos la conexión eléctrica que los fanáticos comparten con esta serie icónica, y hemos transformado esa pasión en una colección seleccionada de productos de alta calidad.</p>
+                            <p>Desde camisetas que reflejan la intensidad de la cancha hasta ropa urbana elegante que captura la esencia de los personajes, nuestra selección es un éxito para los fanáticos de todo el mundo.</p>
+                            <p>Nuestra misión es llevar la emoción de Slam Dunk a su vida cotidiana. Cada artículo de nuestra colección es un testimonio del impacto de la serie, diseñado con una meticulosa atención al detalle y la autenticidad.</p>
+                            <p>Tanto si eres un aficionado acérrimo que revive la emoción de la cancha como si eres un recién llegado ansioso por unirse al universo de Slam Dunk, tenemos algo para cada fanático.</p>
+                        </div>
+                    </div>
+                    <div class="column is-full-mobile is-half-tablet">
+                        <picture>
+                            <source srcset="https://mafia-manga.com/wp-content/uploads/2023/06/Slam-Dunk.jpg.webp" media="(min-width=769px)">
+                            <img style="width: 100%;object-fit: cover;" src="https://mafia-manga.com/wp-content/uploads/2023/06/Slam-Dunk.jpg.webp" alt="Half Image Content">
+                        </picture>
+                    </div>
                 </div>
-              </section>              
+          </section>
         </main>
 
         <footer class="footer">
           <div class="content has-text-centered">
             <p>
-              <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+              <strong>Slam Dunk Shop</strong> by Karla Sierra</a>.
               The source code is licensed
               <a href="https://opensource.org/license/mit">MIT</a>. The
               website content is licensed
