@@ -6,6 +6,7 @@
         <title>Slam Dunk Shop</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <script src="style.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
 
@@ -288,25 +289,46 @@
                 <section class="hero is-primary">
                   <div class="hero-body">
                     <p class="title has-text-centered" style="color: black;">Favoritos de los Fans</p>
-                    <p class="subtitle has-text-centered" style="color: black;">Hecha un vistazo a nuestros productos más destacados.</p>
+                    <p class="subtitle has-text-centered" style="color: black;">Echa un vistazo a nuestros productos más destacados.</p>
                   </div>
                 </section>
-
-                <div class="container">
-                  <div class="carousel">
-                    <div class="carousel-images">
-                      <img src="https://via.placeholder.com/800x400?text=Slide+1" class="carousel-item active">
-                      <img src="https://via.placeholder.com/800x400?text=Slide+2" class="carousel-item">
-                      <img src="https://via.placeholder.com/800x400?text=Slide+3" class="carousel-item">
+              
+                <div class="carousel-container">
+                  <div class="framestrack">
+                    <div class="slide">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 1" />
+                      </figure>
+                      <div class="action">
+                        <h2>Producto 1</h2>
+                        <a href="#">Ver más</a>
+                      </div>
                     </div>
-                
-                    <!-- Botones de navegación -->
-                    <button class="carousel-btn prev">&lt;</button>
-                    <button class="carousel-btn next">&gt;</button>
+                    <div class="slide">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 2" />
+                      </figure>
+                      <div class="action">
+                        <h2>Producto 2</h2>
+                        <a href="#">Ver más</a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Producto 3" />
+                      </figure>
+                      <div class="action">
+                        <h2>Producto 3</h2>
+                        <a href="#">Ver más</a>
+                      </div>
+                    </div>
                   </div>
+              
+                  <!-- Botones de navegación -->
+                  <button class="carousel-btn prev">&lt;</button>
+                  <button class="carousel-btn next">&gt;</button>
                 </div>
-                
-              </section>
+              </section>              
         </main>
 
         <footer class="footer">
