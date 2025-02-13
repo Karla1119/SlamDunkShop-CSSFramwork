@@ -4,7 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
+        <link rel="stylesheet" href="css/contacto.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+          });
+          });
+
+          });
+      </script>
+
     </head>
     <body>
         <header>
@@ -83,13 +110,89 @@
 
         <main>
             <section>
-                <section class="hero is-medium is-link">
+                <section class="hero">
+                  <picture>
+                    <source srcset="https://wallpapers.com/images/hd/slam-dunk-background-1c6o1obog5x9gc9l.jpg" media="(min-width:1024px)" >
+                    <source srcset="https://wallpapers.com/images/hd/slam-dunk-background-1c6o1obog5x9gc9l.jpg" media="(min-width:720px)" >
+                    <img src="https://wallpapers.com/images/hd/slam-dunk-background-1c6o1obog5x9gc9l.jpg" alt="Slide Img 1" />
+                  </picture>
+                  <section class="hero is-info" style="background-color: rgb(0,97,173);">
                     <div class="hero-body">
-                      <p class="title">Medium hero</p>
-                      <p class="subtitle">Medium subtitle</p>
+                      <p class="title has-text-centered" style="color: rgb(255, 255, 255);">Contáctanos</p>
+                      <p class="subtitle has-text-centered" style="color: rgb(255, 255, 255);">Para más información sobre nuestros productos</p>
                     </div>
                   </section>
-            </section>
+                  </section>
+            </section></br>
+
+            <div class="container">
+              <div class="columns is-centered">
+                <!-- Formulario -->
+                <div class="column is-7">
+                  <section class="box" style="background-color: white;">
+                    <div class="field">
+                      <label class="label" style="color: rgb(100, 111, 120);">Nombre</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Tu nombre">
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label" style="color: rgb(100, 111, 120);">Correo Electrónico</label>
+                      <div class="control">
+                        <input class="input" type="email" placeholder="tucorreo@example.com">
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label" style="color: rgb(100, 111, 120);">Asunto</label>
+                      <div class="control">
+                        <div class="select">
+                          <select>
+                            <option>Consulta general</option>
+                            <option>Soporte técnico</option>
+                            <option>Facturación</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label" style="color: rgb(100, 111, 120);">Mensaje</label>
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Escribe tu mensaje aquí"></textarea>
+                      </div>
+                    </div>
+          
+                    <div class="field is-grouped is-justify-content-center">
+                      <div class="control">
+                        <button class="button is-link" style="background-color: rgb(192, 25, 25);">Enviar</button>
+                      </div>
+                      <div class="control">
+                        <button class="button is-link" style="background-color: rgb(232, 52, 52);">Cancelar</button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+          
+                <!-- Información de Contacto -->
+                <div class="column is-4">
+                  <section class="box has-text-centered" style="background-color: white;">
+                    <h2 class="title is-5" style="color: brown;">Información de Contacto</h2>
+                    <p style="color: rgb(100, 111, 120);"><strong style="color: rgb(77, 85, 92);">Email:</strong> contact@slamdunkshop.com</p>
+                    <p style="color: rgb(100, 111, 120);"><strong style="color: rgb(77, 85, 92);">Teléfono:</strong> +504 1234-5678</p>
+                    <p style="color: rgb(100, 111, 120);"><strong style="color: rgb(77, 85, 92);">Dirección:</strong> Calle Principal #123, Ciudad</p>
+                    <hr>
+                    <p style="color: rgb(100, 111, 120);">Síguenos en redes sociales:</p>
+                    <div>
+                      <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
         </main>
 
         <footer class="footer">

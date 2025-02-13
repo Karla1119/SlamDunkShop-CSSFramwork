@@ -1,0 +1,21 @@
+.input, select, textarea {
+    background-color: rgba(225, 225, 225, 0.897) !important;
+    color: rgb(74, 74, 74) !important;
+    border: 1px solid #ccc !important; /* Borde sutil */
+}
+  
+.input::placeholder, textarea::placeholder {
+    color: rgb(100, 100, 100) !important;
+    opacity: 1 !important;
+}
+  
+
+.input:focus, select:focus, textarea:focus {
+    border-color: #1f67a8 !important; /* Azul principal de tu paleta */
+    box-shadow: 0 0 5px rgba(31, 103, 168, 0.5) !important;
+}
+
+.button:hover{
+    background-color: rgb(126, 10, 10)!important;
+}
+
